@@ -2,6 +2,8 @@
 
 Visor interactivo en Three.js para explorar el Tívoli World histórico de Benalmádena y comparar su entorno con una interpretación del avance urbanístico. Incluye relieve, calles, límites aproximados, atracciones animadas y fichas explicativas.
 
+**Ver el visor:** <https://ninco90.github.io/tivoli-world/>.
+
 **Es una maqueta interpretativa.** Las atracciones, cotas de instalaciones, edificios futuros y conexiones ocultas de Tívoli Agua no son planos de ejecución ni un levantamiento exacto. El parque permanece cerrado en el escenario «Existente»; la animación no indica que las atracciones funcionen hoy.
 
 ## Ejecutarlo
