@@ -3,7 +3,7 @@ import * as THREE from 'three';
 // Exterior details reconstructed from the visitor photographs supplied by the user.
 // Footprints retain the historic catalogue's approximate locations; no surveyed dimensions.
 export async function buildPhotoRides({group,terrain,mesh,box,cyl,imageToWorld}) {
-  const response=await fetch('/attractions.json');
+  const response=await fetch('./attractions.json');
   if(!response.ok)throw Error('No se pudo cargar el catálogo de atracciones');
   const {items}=await response.json(),updates=[],targets={};
   const metal=0xaab4b9,gold=0xd8b45c,blue=0x347998,red=0x903c3c;

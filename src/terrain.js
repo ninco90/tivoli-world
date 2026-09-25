@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {TessellateModifier} from 'three/addons/modifiers/TessellateModifier.js';
 export async function loadTerrain(){
- const r=await fetch('/terrain.json');if(!r.ok)throw Error('No se pudo cargar el modelo digital del terreno');const d=await r.json();
+ const r=await fetch('./terrain.json');if(!r.ok)throw Error('No se pudo cargar el modelo digital del terreno');const d=await r.json();
  const values=d.elevations,w=d.width,h=d.height;
  function elevation(x,z){const u=THREE.MathUtils.clamp((x-d.minX)/(d.maxX-d.minX)*(w-1),0,w-1),v=THREE.MathUtils.clamp((z-d.minZ)/(d.maxZ-d.minZ)*(h-1),0,h-1),a=Math.floor(u),b=Math.floor(v),c=Math.min(a+1,w-1),e=Math.min(b+1,h-1),fu=u-a,fv=v-b;return (values[b*w+a]*(1-fu)+values[b*w+c]*fu)*(1-fv)+(values[e*w+a]*(1-fu)+values[e*w+c]*fu)*fv;}
  const datum=d.originElevation??elevation(70,196);let enabled=true;const relative=(x,z)=>enabled?elevation(x,z)-datum:0;const changes=[];const basins=[];

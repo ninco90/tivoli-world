@@ -35,7 +35,7 @@ export async function createWorld(host,onSelect){
  function coaster(g,x,z,y,s=1){const pts=[];for(let i=0;i<24;i++){const a=i/24*Math.PI*2;pts.push(new THREE.Vector3(x+Math.cos(a)*30*s,y+4+(Math.sin(a*2)+1)*8*s,z+Math.sin(a)*18*s))}const curve=new THREE.CatmullRomCurve3(pts,true);mesh(g,new THREE.TubeGeometry(curve,150,.8,5,true),0xc27c53,0,0,0,'park');for(let i=0;i<24;i+=2){const p=pts[i];cyl(g,p.x,y,p.z,.45,p.y-y,0xa9b0a0)}const train=box(g,0,0,0,3,2,5,0xe4b55b,'park');animated.push({o:train,type:'train',curve,g,motion:rideMotion(curve,{min:2,max:14,gravity:7,drag:.25})});}
  function car(g,x,z,y,c=0xeee7d9){box(g,x,y,z,2,1.1,4,c);box(g,x,y+1,z,1.6,.65,2,0x719195)}
  function parkingLot(g,cx,cz,w,d,y=1,underground=false){box(g,cx,y-.6,cz,w,.6,d,underground?0x677d89:0xb8b8aa,'parking');for(let x=cx-w/2+4;x<cx+w/2-3;x+=5)for(let z=cz-d/2+5;z<cz+d/2-3;z+=12){box(g,x,y+.02,z,.15,.08,5,0xe8e5d5);if(Math.sin(x+z)>.1)car(g,x+2,z,y+.2,Math.sin(x)>0?0xdbbda1:0x7f9592)}}
- let context=await fetch('/context.json').then(r=>r.ok?r.json():null).catch(()=>null);let plan=await fetch('/plan.json').then(r=>r.ok?r.json():null).catch(()=>null);
+ let context=await fetch('./context.json').then(r=>r.ok?r.json():null).catch(()=>null);let plan=await fetch('./plan.json').then(r=>r.ok?r.json():null).catch(()=>null);
  if(!context||!plan)throw new Error('No se pudieron cargar las bases cartográficas locales.');
  const frontage=frontageAlignment(context.roads);
  terrain.ground(base);

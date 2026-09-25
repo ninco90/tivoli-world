@@ -3,7 +3,7 @@ import * as THREE from 'three';
 // Footprints come from the PNOA tracing. Vertical dimensions and seat counts are illustrative.
 // Each whole structure is translated once by terrain.apply, retaining level architecture.
 export async function buildSpecials({group,mesh,box,cyl,poly,ribbon,line,label,imageToWorld,terrain}){
- const response=await fetch('/current-specials.json');if(!response.ok)throw new Error('No se pudieron cargar auditorio y entrada');const data=await response.json();
+ const response=await fetch('./current-specials.json');if(!response.ok)throw new Error('No se pudieron cargar auditorio y entrada');const data=await response.json();
  const material=(color)=>new THREE.MeshStandardMaterial({color,roughness:.9,side:THREE.DoubleSide});
  const inside=(p,polygon)=>{let yes=false;for(let i=0,j=polygon.length-1;i<polygon.length;j=i++){const a=polygon[i],b=polygon[j];if((a[1]>p[1])!==(b[1]>p[1])&&p[0]<(b[0]-a[0])*(p[1]-a[1])/(b[1]-a[1])+a[0])yes=!yes;}return yes;};
  function makeGroup(pixel,name){const p=imageToWorld(pixel),g=new THREE.Group();g.name=name;g.position.set(p[0],1.5,p[1]);group.add(g);return {g,p,P:q=>{const v=imageToWorld(q);return [v[0]-p[0],v[1]-p[1]]}};}

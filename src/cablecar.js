@@ -3,7 +3,7 @@ import * as THREE from 'three';
 
 // Footprint and tower positions: OSM 759608839 / 19745391. Heights are illustrative.
 export async function buildCablecar({group,terrain,label}) {
- const response=await fetch('/cablecar.json');
+ const response=await fetch('./cablecar.json');
  if(!response.ok)throw new Error('No se pudo cargar el trazado del teleférico.');
  const data=await response.json();
  const root=new THREE.Group();root.name='Teleférico existente — estación y apoyos OSM';

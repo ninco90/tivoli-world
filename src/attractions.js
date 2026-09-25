@@ -4,7 +4,7 @@ import * as THREE from 'three';
 // The 40 names come from the historic visitor guide. Small ride footprints and
 // machinery are interpretive models, never a claim of surveyed dimensions.
 export async function buildAttractions({group,mesh,box,cyl,poly,ribbon,line,label,terrain}) {
-  const response=await fetch('/attractions.json');
+  const response=await fetch('./attractions.json');
   if(!response.ok) throw new Error('No se pudo cargar el catálogo de atracciones');
   const catalog=await response.json();
   const targets={},updates=[];

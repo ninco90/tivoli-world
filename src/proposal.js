@@ -3,7 +3,7 @@ import * as THREE from 'three';
 
 // Render-derived footprint; elevations and structural sections remain interpretive.
 export async function buildProposal({group:g,terrain,mesh,box,cyl,poly,ribbon,label,wheel,tree,alignFrontage=p=>p}) {
- const data=await fetch('/reference/new-project-geometry.json').then(r=>r.json());
+ const data=await fetch('./reference/new-project-geometry.json').then(r=>r.json());
  const outer=data.roofPolygons[0].map(alignFrontage),level=z=>104-.045*z;
  const mean=ps=>ps.reduce((a,p)=>[a[0]+p[0]/ps.length,a[1]+p[1]/ps.length],[0,0]);
  const P=([u,v])=>[.597053235*u-.005292296*v-440.062941,.000462871*u+.615100638*v-336.134613];
@@ -122,5 +122,5 @@ export async function buildProposal({group:g,terrain,mesh,box,cyl,poly,ribbon,la
  // Slim horizontal slab returns emphasize the stepped retail frontage in D without enlarged blocks.
  const terraceBands=[[[797,775],[922,633]],[[798,760],[913,632]],[[796,746],[905,632]]];
  for(let i=0;i<terraceBands.length;i++){const [a,b]=terraceBands[i].map(P),c=mean([a,b]),sub=subAt(c[0],c[1],E(c[1])-i*2.7),dx=b[0]-a[0],dz=b[1]-a[1],beam=box(sub,0,0,0,Math.hypot(dx,dz),.32,1.7,0xe2ddce,'commercial');beam.rotation.y=-Math.atan2(dz,dx);}
- return {updateTerrain,data,level,outer,targets,accessHeight:accessGround+4,interpretations:{access:'Plaza cubierta de acceso al complejo interpretada desde A y D; no entrada controlada al parque confirmada.',roof:'Borde norte retraído para no convertir el parque central en cubierta comercial; alturas interpretativas.',sources:['/reference/new-project-a.jpg','/reference/new-project-d.jpg']}};
+ return {updateTerrain,data,level,outer,targets,accessHeight:accessGround+4,interpretations:{access:'Plaza cubierta de acceso al complejo interpretada desde A y D; no entrada controlada al parque confirmada.',roof:'Borde norte retraído para no convertir el parque central en cubierta comercial; alturas interpretativas.',sources:['./reference/new-project-a.jpg','./reference/new-project-d.jpg']}};
 }

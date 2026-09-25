@@ -12,7 +12,7 @@ import * as THREE from 'three';
 // Full image: 1600 x 1840. CRS:84 bbox -4.5432,36.5983,-4.5378,36.6033.
 export const imageToWorld=([u,v])=>[( -.0024+u/1472*.0054)*111320*Math.cos(36.6006*Math.PI/180),(-.0027+v/1692*.005)*111320];
 export async function buildExisting({group:g,mesh,box,cyl,poly,ribbon,line,label,old,inside,terrain}){
- const buildings=await fetch('/current-buildings.json').then(r=>r.json());
+ const buildings=await fetch('./current-buildings.json').then(r=>r.json());
  const P=imageToWorld, paths=[], features={};
 
  const heightAt=(x,z)=>terrain?.relative(x,z)??0;
@@ -26,7 +26,7 @@ export async function buildExisting({group:g,mesh,box,cyl,poly,ribbon,line,label
  const feature=(id,name,pixel,y=12)=>{const [x,z]=P(pixel);features[id]=[x,z];if(!['existing-water','existing-coaster','existing-wheel','existing-tower'].includes(id))label(g,name,x,z,y,'existing',id)};
  const groundPatch=poly(g,old,0x9f9d79,1.2,0,'park');
  groundPatch.userData.groundSurface=true;groundPatch.userData.drape=true;
- const texture=await new THREE.TextureLoader().loadAsync('/reference/pnoa.jpg');texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=8;
+ const texture=await new THREE.TextureLoader().loadAsync('./reference/pnoa.jpg');texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=8;
  const shape=new THREE.Shape();old.forEach(([x,z],i)=>i?shape.lineTo(x,-z):shape.moveTo(x,-z));shape.closePath();const geo=new THREE.ShapeGeometry(shape);geo.rotateX(-Math.PI/2);
  const pos=geo.attributes.position,uv=geo.attributes.uv;const [minX,minZ]=P([0,0]),[maxX,maxZ]=P([1472,1692]);
  for(let i=0;i<pos.count;i++)uv.setXY(i,(pos.getX(i)-minX)/(maxX-minX),1-(pos.getZ(i)-minZ)/(maxZ-minZ));
@@ -66,7 +66,7 @@ export async function buildExisting({group:g,mesh,box,cyl,poly,ribbon,line,label
  feature('existing-entry','Entrada histórica · taquillas',[803,1300],12);
  // Roof footprints are independently traced from PNOA. No generic grid of pavilions is used here.
  for(const b of buildings.buildings){if(b.name==='Cubierta oeste')continue;const buildingStart=g.children.length,buildingAnchor=b.points.reduce((a,p)=>[a[0]+p[0]/b.points.length,a[1]+p[1]/b.points.length],[0,0]),buildingLevel=Math.max(...b.points.map(p=>heightAt(...p)));foundation(b.points,buildingLevel,0xb7aa91);poly(g,b.points,0xd8c6a4,b.height,1.4,'park');poly(g,b.points,b.roof==='tile'?0xae7860:b.roof==='shed'?0xc5c2b1:0xc7baa0,.35,1.4+b.height,'park');if(b.roof==='tile'&&b.points.length===4){let p=[...b.points];if(Math.hypot(p[1][0]-p[0][0],p[1][1]-p[0][1])>Math.hypot(p[2][0]-p[1][0],p[2][1]-p[1][1]))p=[p[1],p[2],p[3],p[0]];const y=1.8+b.height,r1=[(p[0][0]+p[1][0])/2,y+1.5,(p[0][1]+p[1][1])/2],r2=[(p[2][0]+p[3][0])/2,y+1.5,(p[2][1]+p[3][1])/2],a=p.map(q=>[q[0],y,q[1]]),verts=[...a[0],...a[1],...r1,...a[2],...a[3],...r2,...a[0],...r1,...r2,...a[0],...r2,...a[3],...a[1],...a[2],...r2,...a[1],...r2,...r1];const roofGeo=new THREE.BufferGeometry();roofGeo.setAttribute('position',new THREE.Float32BufferAttribute(verts,3));roofGeo.computeVertexNormals();const roof=new THREE.Mesh(roofGeo,new THREE.MeshStandardMaterial({color:0xae7860,side:THREE.DoubleSide,roughness:1}));roof.castShadow=true;g.add(roof);}const c=b.points.reduce((a,p)=>[a[0]+p[0]/b.points.length,a[1]+p[1]/b.points.length],[0,0]);for(let i=0;i<b.points.length;i++){const a=b.points[i],d=b.points[(i+1)%b.points.length],len=Math.hypot(a[0]-d[0],a[1]-d[1]);for(let t=2.5;t<len-1;t+=4){const x=a[0]+(d[0]-a[0])*t/len,z=a[1]+(d[1]-a[1])*t/len;const win=box(g,x,2.2,z,1.4,1.9,.12,0x637568);win.rotation.y=Math.atan2(-(d[1]-a[1]),d[0]-a[0]);}}rigidUnit(buildingStart,buildingAnchor,b.name||'Pabellón histórico',buildingLevel);}
- const trees=await fetch('/current-trees.json').then(r=>r.json());
+ const trees=await fetch('./current-trees.json').then(r=>r.json());
  trees.points=trees.points.filter(([x,z,size])=>!waterDetails.clearance(x,z,2+size)&&!karting.clearance(x,z,2+size));
  const trunks=new THREE.InstancedMesh(new THREE.CylinderGeometry(.25,.4,1,7),new THREE.MeshStandardMaterial({color:0x776b52}),trees.points.length);
  const crowns=new THREE.InstancedMesh(new THREE.IcosahedronGeometry(1,2),new THREE.MeshStandardMaterial({color:0xffffff,roughness:1}),trees.points.length*3);const dummy=new THREE.Object3D();
