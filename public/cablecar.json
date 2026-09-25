@@ -1,0 +1,142 @@
+{
+  "note": "Planta de estación y apoyos cartográficos. Alturas, maquinaria y flecha de cables interpretativas; no levantamiento técnico.",
+  "station": [
+    [
+      79.85,
+      188.9
+    ],
+    [
+      83.24,
+      186.26
+    ],
+    [
+      86.05,
+      186.32
+    ],
+    [
+      95.07,
+      196.06
+    ],
+    [
+      95.34,
+      198.33
+    ],
+    [
+      95.04,
+      199.98
+    ],
+    [
+      94.2,
+      201.03
+    ],
+    [
+      93.1,
+      201.81
+    ],
+    [
+      91.75,
+      202.08
+    ],
+    [
+      90.4,
+      202.11
+    ],
+    [
+      89.23,
+      201.78
+    ],
+    [
+      79.61,
+      191.35
+    ],
+    [
+      79.85,
+      188.9
+    ]
+  ],
+  "source": "OpenStreetMap contributors, ODbL; way 19745391 and station 759608839",
+  "route": [
+    {
+      "id": "205327655",
+      "position": [
+        90.36,
+        195.08
+      ],
+      "pylon": false
+    },
+    {
+      "id": "4450929007",
+      "position": [
+        77.98,
+        181.15
+      ],
+      "pylon": true
+    },
+    {
+      "id": "4450929008",
+      "position": [
+        52.16,
+        152.39
+      ],
+      "pylon": true
+    },
+    {
+      "id": "205327662",
+      "position": [
+        -17.9,
+        73.45
+      ],
+      "pylon": true
+    },
+    {
+      "id": "205327668",
+      "position": [
+        -131.47,
+        -54.66
+      ],
+      "pylon": true
+    },
+    {
+      "id": "5355088786",
+      "position": [
+        -151.66,
+        -77.07
+      ],
+      "pylon": false
+    },
+    {
+      "id": "205327673",
+      "position": [
+        -207.12,
+        -138.65
+      ],
+      "pylon": true
+    },
+    {
+      "id": "205327679",
+      "position": [
+        -227.6,
+        -162.39
+      ],
+      "pylon": true
+    },
+    {
+      "id": "205327689",
+      "position": [
+        -287.72,
+        -227.47
+      ],
+      "pylon": true
+    },
+    {
+      "id": "205327755",
+      "position": [
+        -402.46,
+        -354.74
+      ],
+      "pylon": true
+    }
+  ],
+  "operatorSource": "https://www.telefericobenalmadena.com/prepara-tu-visita/informacion-relevante/como-llegar",
+  "sourceUrl": "https://www.openstreetmap.org/way/19745391"
+}

@@ -1,0 +1,705 @@
+{
+  "source": "Guía del Parque Tívoli World reproducida por ParquePlaza en junio de 2020; posiciones aproximadas cotejadas con PNOA",
+  "year": 2020,
+  "publicationDate": "2020-06",
+  "sourceUrl": "https://www.parqueplaza.net/2020/06/tivoli-world-abrira-el-3-de-julio-con.html",
+  "sourceImage": "https://3.bp.blogspot.com/-yyRcPU1_poo/XujNVIsZveI/AAAAAAACPGU/4RvA73EHmMkkhn8gtwpOSFdzFWEgg34kQCLcBGAsYHQ/s1600/553802cb5e436debb42557c462fc5dfe.jpg",
+  "imageReference": {
+    "width": 1472,
+    "height": 1692,
+    "originalWidth": 1600,
+    "originalHeight": 1840,
+    "bbox": [
+      -4.5432,
+      36.5983,
+      -4.5378,
+      36.6033
+    ]
+  },
+  "center": [
+    -4.5408,
+    36.6006
+  ],
+  "caveat": "Catálogo histórico completo de 40 entradas, no inventario técnico actual. La guía ilustrada no está a escala. Numerosos puntos menores solo pueden situarse en su zona aproximada (confianza baja). No utilizar ubicaciones para medir o certificar elementos conservados. La fecha de publicación de la guía no asegura que todas las atracciones funcionasen simultáneamente en 2020.",
+  "items": [
+    {
+      "id": "ride-01",
+      "number": 1,
+      "name": "Dinolandia",
+      "type": "building",
+      "x": -86.4625,
+      "z": -156.8075,
+      "imageXY": [
+        390,
+        437
+      ],
+      "confidence": "alta",
+      "positionNote": "Edificio almenado inmediatamente detrás de Tívoli Dragón, identificado por el usuario y sus fotografías. Fachada reconstruida visualmente.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-02",
+      "number": 2,
+      "name": "Tívoli Dragón",
+      "type": "ride",
+      "x": -85.64,
+      "z": -142.01,
+      "imageXY": [
+        393,
+        482
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-03",
+      "number": 3,
+      "name": "Caída Libre 60 m",
+      "type": "tower",
+      "x": -98.1,
+      "z": -123.91,
+      "imageXY": [
+        355,
+        537
+      ],
+      "confidence": "alta",
+      "positionNote": "Elemento reconocible en PNOA, identificación cotejada con guía histórica; centro aproximado.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-04",
+      "number": 4,
+      "name": "Noria",
+      "type": "wheel",
+      "x": -83.35,
+      "z": -37.4,
+      "imageXY": [
+        400,
+        800
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-05",
+      "number": 5,
+      "name": "Tokaido",
+      "type": "ride",
+      "x": -93.84,
+      "z": -17.33,
+      "imageXY": [
+        368,
+        861
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-06",
+      "number": 6,
+      "name": "Twister",
+      "type": "ride",
+      "x": -128.59,
+      "z": 30.37,
+      "imageXY": [
+        262,
+        1006
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-07",
+      "number": 7,
+      "name": "Pinocchio",
+      "type": "ride",
+      "x": -83.67,
+      "z": 49.12,
+      "imageXY": [
+        399,
+        1063
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-08",
+      "number": 8,
+      "name": "Montaña rusa",
+      "type": "coaster",
+      "x": 11.73,
+      "z": -210.76,
+      "imageXY": [
+        690,
+        273
+      ],
+      "confidence": "alta",
+      "positionNote": "Elemento reconocible en PNOA, identificación cotejada con guía histórica; centro aproximado.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-09",
+      "number": 9,
+      "name": "Coches de choque",
+      "type": "bumper",
+      "x": 18.29,
+      "z": -168.98,
+      "imageXY": [
+        710,
+        400
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-10",
+      "number": 10,
+      "name": "Noria gigante",
+      "type": "wheel",
+      "x": 64.19,
+      "z": -136.08,
+      "imageXY": [
+        850,
+        500
+      ],
+      "confidence": "alta",
+      "positionNote": "Elemento reconocible en PNOA, identificación cotejada con guía histórica; centro aproximado.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-11",
+      "number": 11,
+      "name": "Race horse",
+      "type": "ride",
+      "x": 95.33,
+      "z": -136.41,
+      "imageXY": [
+        945,
+        499
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-12",
+      "number": 12,
+      "name": "Castillo del terror",
+      "type": "building",
+      "x": 90.74,
+      "z": -154.18,
+      "imageXY": [
+        931,
+        445
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-13",
+      "number": 13,
+      "name": "Techno jump",
+      "type": "ride",
+      "x": 28.45,
+      "z": -110.43,
+      "imageXY": [
+        741,
+        578
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-14",
+      "number": 14,
+      "name": "Amor express",
+      "type": "ride",
+      "x": 52.71,
+      "z": -84.77,
+      "imageXY": [
+        815,
+        656
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-15",
+      "number": 15,
+      "name": "Tívoli agua",
+      "type": "water",
+      "x": 100.25,
+      "z": -85.1,
+      "imageXY": [
+        960,
+        655
+      ],
+      "confidence": "alta",
+      "positionNote": "Elemento reconocible en PNOA, identificación cotejada con guía histórica; centro aproximado.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-16",
+      "number": 16,
+      "name": "Trenecito",
+      "type": "train",
+      "x": -39.41,
+      "z": 55.37,
+      "imageXY": [
+        534,
+        1082
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-17",
+      "number": 17,
+      "name": "Mansión del terror",
+      "type": "building",
+      "x": -92.2,
+      "z": -198.92,
+      "imageXY": [
+        373,
+        309
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-18",
+      "number": 18,
+      "name": "Karting (Go-karts)",
+      "type": "karts",
+      "x": 31.07,
+      "z": -135.76,
+      "imageXY": [
+        749,
+        501
+      ],
+      "confidence": "alta",
+      "positionNote": "Elemento reconocible en PNOA, identificación cotejada con guía histórica; centro aproximado.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-19",
+      "number": 19,
+      "name": "Montaña rusa infantil",
+      "type": "coaster",
+      "x": -118.75,
+      "z": 3.07,
+      "imageXY": [
+        292,
+        923
+      ],
+      "confidence": "media",
+      "positionNote": "Centro y eje longitudinal ajustados visualmente a la huella de la ortofoto IGN; geometría en ocho interpretativa, sin levantamiento topográfico.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual.",
+      "rotationY": -0.55
+    },
+    {
+      "id": "ride-20",
+      "number": 20,
+      "name": "Mini pista",
+      "type": "ride",
+      "x": -85.97,
+      "z": 22.15,
+      "imageXY": [
+        392,
+        981
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-21",
+      "number": 21,
+      "name": "Baby barcas",
+      "type": "boat",
+      "x": -70.23,
+      "z": -7.46,
+      "imageXY": [
+        440,
+        891
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-22",
+      "number": 22,
+      "name": "Aero baby",
+      "type": "ride",
+      "x": -76.79,
+      "z": 16.88,
+      "imageXY": [
+        420,
+        965
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-23",
+      "number": 23,
+      "name": "Marine Bay",
+      "type": "boat",
+      "x": -108.92,
+      "z": 15.9,
+      "imageXY": [
+        322,
+        962
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-24",
+      "number": 24,
+      "name": "Tívoli jungla",
+      "type": "playground",
+      "x": -59.74,
+      "z": 65.9,
+      "imageXY": [
+        472,
+        1114
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-25",
+      "number": 25,
+      "name": "Piratas",
+      "type": "boat",
+      "x": -28.27,
+      "z": 90.9,
+      "imageXY": [
+        568,
+        1190
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-26",
+      "number": 26,
+      "name": "Qatar F-1 y mini motos",
+      "type": "karts",
+      "x": -35.48,
+      "z": -142.01,
+      "imageXY": [
+        546,
+        482
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-27",
+      "number": 27,
+      "name": "Barcas de choque",
+      "type": "boat",
+      "x": -8.6,
+      "z": 57.67,
+      "imageXY": [
+        628,
+        1089
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-28",
+      "number": 28,
+      "name": "Barco misterioso",
+      "type": "boat",
+      "x": -22.69,
+      "z": 33.33,
+      "imageXY": [
+        585,
+        1015
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-29",
+      "number": 29,
+      "name": "Coches Ford",
+      "type": "ride",
+      "x": -91.54,
+      "z": 33.99,
+      "imageXY": [
+        375,
+        1017
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-30",
+      "number": 30,
+      "name": "Doble carrusel",
+      "type": "carousel",
+      "x": -81.71,
+      "z": -16.34,
+      "imageXY": [
+        405,
+        864
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-31",
+      "number": 31,
+      "name": "Caída libre infantil 9 m",
+      "type": "tower",
+      "x": -52.2,
+      "z": 80.7,
+      "imageXY": [
+        495,
+        1159
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-32",
+      "number": 32,
+      "name": "La Fayette",
+      "type": "ride",
+      "x": -2.37,
+      "z": -92.99,
+      "imageXY": [
+        647,
+        631
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-33",
+      "number": 33,
+      "name": "Mini carrusel",
+      "type": "carousel",
+      "x": -66.3,
+      "z": 102.08,
+      "imageXY": [
+        452,
+        1224
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-34",
+      "number": 34,
+      "name": "Saxonia tren",
+      "type": "train",
+      "x": -73.84,
+      "z": -98.58,
+      "imageXY": [
+        429,
+        614
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-35",
+      "number": 35,
+      "name": "Swan chairplane",
+      "type": "ride",
+      "x": -29.91,
+      "z": -110.1,
+      "imageXY": [
+        563,
+        579
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-36",
+      "number": 36,
+      "name": "Balloon carrusel",
+      "type": "carousel",
+      "x": -51.54,
+      "z": -112.73,
+      "imageXY": [
+        497,
+        571
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-37",
+      "number": 37,
+      "name": "Noria infantil",
+      "type": "wheel",
+      "x": -58.1,
+      "z": 59.32,
+      "imageXY": [
+        477,
+        1094
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-38",
+      "number": 38,
+      "name": "Caballitos",
+      "type": "carousel",
+      "x": 25.17,
+      "z": 140.9,
+      "imageXY": [
+        731,
+        1342
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-39",
+      "number": 39,
+      "name": "Ratolandia",
+      "type": "playground",
+      "x": 29.43,
+      "z": 71.49,
+      "imageXY": [
+        744,
+        1131
+      ],
+      "confidence": "media",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    },
+    {
+      "id": "ride-40",
+      "number": 40,
+      "name": "Juegos deportivos",
+      "type": "playground",
+      "x": 43.86,
+      "z": -123.25,
+      "imageXY": [
+        788,
+        539
+      ],
+      "confidence": "baja",
+      "positionNote": "Posición orientativa obtenida al comparar la guía ilustrada y la ortofoto; no acredita el punto exacto ni su conservación actual.",
+      "historical": true,
+      "status": "Catalogada en la guía histórica; parque cerrado. No implica funcionamiento actual."
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "entrance",
+      "name": "Entrada principal",
+      "type": "entrance",
+      "x": 54.35,
+      "z": 128.4,
+      "imageXY": [
+        820,
+        1304
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "auditorium",
+      "name": "Teatro Tívoli / auditorio",
+      "type": "amphitheatre",
+      "x": 8.45,
+      "z": -30.82,
+      "imageXY": [
+        680,
+        820
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "fountain",
+      "name": "Fuente central",
+      "type": "fountain",
+      "x": -34.17,
+      "z": -64.04,
+      "imageXY": [
+        550,
+        719
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

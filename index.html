@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#183e32" />
+    <title>Tívoli · Atlas del cambio</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Tívoli, atlas del cambio"><span class="brand-mark">tívoli<span class="brand-star">✳</span></span><span class="brand-divider"></span><span class="brand-sub">ATLAS<br>DEL CAMBIO</span></a>
+        <div class="topbar-location"><span class="location-dot"></span> BENALMÁDENA · COSTA DEL SOL</div>
+        <button id="btn-sources" class="text-button">Documentación <span aria-hidden="true">↗</span></button>
+      </header>
+
+      <section class="page-heading" aria-label="Presentación">
+        <div><p class="eyebrow">UN PARQUE, DOS MOMENTOS</p><h1>El Tívoli que conoces.<br><em>El cambio que viene.</em></h1></div>
+        <div class="heading-summary"><p>Explora el parque y su entorno en 3D.<br>Compara lo existente con la transformación propuesta.</p><div class="interpretation-note"><span aria-hidden="true">ⓘ</span> Maqueta interpretativa · Avance urbanístico, no proyecto definitivo</div></div>
+      </section>
+
+      <main class="explorer-layout">
+        <aside class="information-panel" aria-label="Información de la zona seleccionada">
+          <div class="panel-section detail-section">
+            <div class="detail-topline"><span id="detail-kicker" class="eyebrow">UNA NUEVA ETAPA</span><span class="chapter-number">01 / 03</span></div>
+            <h2 id="detail-title">Un lugar con historia.<br>Un futuro por descubrir.</h2>
+            <div id="detail-body" class="detail-body"><p>Selecciona una zona de la maqueta para entender qué existe y qué se propone transformar.</p></div>
+            <div id="detail-stats" class="detail-stats"></div>
+            <div id="detail-source" class="detail-source"></div>
+          </div>
+          <details id="attractions-panel" class="panel-section attractions-section" open><summary>ATRACCIONES DEL PARQUE EXISTENTE</summary><label class="attraction-search-label" for="attraction-search">Buscar en el inventario de atracciones</label><input id="attraction-search" type="search" placeholder="Buscar una atracción…" autocomplete="off" aria-controls="attraction-list"><div id="attraction-count" class="attraction-count" role="status"></div><div id="attraction-list" class="attraction-list" aria-label="Atracciones del parque existente"></div></details>
+          <div class="panel-section zones-section"><div class="section-label"><h3>EXPLORA POR ZONAS</h3><span>↘</span></div><div id="zone-list" class="zone-list"></div></div>
+          <div class="panel-section timeline-section"><div class="section-label"><h3>DEL PLAN A LA REALIDAD</h3></div><div id="timeline-list" class="timeline-list"></div></div>
+          <div class="sidebar-foot"><span class="small-star">✳</span><p>Una lectura visual del planeamiento.<br>Las formas y las atracciones son ilustrativas.</p></div>
+        </aside>
+
+        <section class="scene-panel" aria-label="Maqueta tridimensional interactiva">
+          <div class="scene-topbar"><div class="mode-control" role="group" aria-label="Momento de la maqueta"><button id="mode-current" class="mode-button" aria-pressed="false">Existente</button><button id="mode-future" class="mode-button active" aria-pressed="true">Propuesta</button><button id="mode-compare" class="mode-button" aria-pressed="false"><span aria-hidden="true">◧</span> Comparar</button></div><span class="scene-badge"><span></span> EXPLORACIÓN 3D</span></div>
+          <div id="canvas-host" tabindex="0" aria-label="Vista 3D. WASD para volar, Q y E para bajar y subir, Shift para acelerar. Arrastra para girar, utiliza la rueda para acercarte y pulsa una zona para ver sus detalles."></div>
+          <div id="compare-labels" class="compare-labels" hidden><span>EXISTENTE</span><span>PROPUESTA</span></div>
+          <div class="scene-caption"><p class="eyebrow">TÍVOLI WORLD Y SU ENTORNO</p><h2 id="view-caption">Una mirada al futuro</h2><p id="scene-status" role="status">Preparando la maqueta…</p></div>
+          <div class="view-tools" role="group" aria-label="Opciones de vista"><button id="btn-reset" title="Restablecer vista" aria-label="Restablecer vista"><span aria-hidden="true">↺</span></button><button id="btn-top" title="Vista aérea" aria-label="Vista aérea"><span aria-hidden="true">▱</span></button><span class="tool-divider"></span><button id="btn-night" title="Cambiar iluminación" aria-label="Cambiar iluminación" aria-pressed="false"><span aria-hidden="true">☾</span></button><button id="btn-screenshot" title="Guardar imagen" aria-label="Guardar imagen"><span aria-hidden="true">▣</span></button></div>
+          <div class="terrain-tools" role="group" aria-label="Terreno y referencias"><button id="btn-terrain" class="layer-button active" title="Relieve real / plano" aria-pressed="true"><span aria-hidden="true">⌁</span> Relieve real</button><button id="btn-profile" class="layer-button" aria-controls="terrain-panel" aria-expanded="false">Perfil del terreno</button><button id="btn-proposal-access" class="layer-button">Fachada y acceso</button><button id="btn-project-reference" class="layer-button">Boceto aéreo <span aria-hidden="true">↗</span></button></div>
+          <section id="terrain-panel" class="terrain-panel" hidden aria-label="Perfil y cotas del terreno"><div class="terrain-panel-heading"><div><p class="eyebrow">LEER LA TOPOGRAFÍA</p><h3>El parque sobre la ladera</h3></div><button id="btn-close-profile" aria-label="Cerrar perfil del terreno">×</button></div><div id="terrain-summary" class="terrain-summary"></div><svg id="terrain-profile" viewBox="0 0 500 170" role="img" aria-label="Perfil del terreno y comparación de elevaciones"></svg><p class="terrain-caveat">Elevaciones de referencia; no rasantes aprobadas del futuro proyecto</p></section>
+          <div id="tour-panel" class="tour-panel" hidden aria-live="polite"><div class="tour-heading"><span id="tour-progress" class="eyebrow">RECORRIDO · 1 / 6</span><button id="tour-stop" aria-label="Cerrar recorrido">×</button></div><h3 id="tour-title">Descubre el cambio</h3><p id="tour-text"></p><div class="tour-navigation"><button id="tour-prev">← Anterior</button><button id="tour-next">Siguiente →</button></div></div>
+          <div class="scene-bottom"><div id="legend" class="legend" aria-label="Leyenda"></div><div class="scene-controlbar"><button id="btn-tour" class="tour-button"><span aria-hidden="true">▷</span> Recorrido guiado</button><div class="layer-controls"><button id="btn-labels" class="layer-button active" aria-pressed="true">Etiquetas</button><button id="btn-ride-motion" class="layer-button" type="button" aria-pressed="true" title="Simulación histórica de Dragón y Caída Libre; no indica actividad actual">Animar atracciones</button><button id="btn-attraction-names" class="layer-button active" aria-pressed="true" title="Mostrar u ocultar nombres de las atracciones existentes">Atracciones</button><button id="btn-aerial" class="layer-button active" aria-pressed="true" title="Mostrar u ocultar la fotografía aérea bajo la maqueta existente">Ortofoto</button><button id="btn-parking" class="layer-button" aria-pressed="false">Aparcamientos</button></div><span class="interaction-hint">WASD volar · Q/E bajar/subir · Shift rápido · Arrastra para girar</span></div></div>
+        </section>
+      </main>
+      <footer class="page-footer"><span>ARQUITECTURA DEL CAMBIO <span aria-hidden="true">/</span> TÍVOLI WORLD</span><span>Ortofoto © IGN · Calles © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> · Límites aproximados</span></footer>
+    </div>
+
+    <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><div><p class="eyebrow">PARA IR MÁS ALLÁ</p><h2 id="sources-title">Documentación y criterios</h2></div><button id="btn-close-sources" aria-label="Cerrar documentación">×</button></div><div id="sources-content" class="sources-content"></div></dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

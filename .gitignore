@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.vite/
+*.zip
+
+# Public reference material without an identified redistribution licence.
+public/docs/
+public/reference/historic-*.png
+public/reference/new-project-a.jpg
+public/reference/new-project-d.jpg
+
+# Local scratch and editor files.
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
